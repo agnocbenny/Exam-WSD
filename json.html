@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News from JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .news-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .news-card h3 {
+            margin: 10px 0;
+        }
+
+        .news-card p {
+            color: #555;
+        }
+
+        .news-card a {
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .news-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Latest News</h1>
+
+    <div id="news-container"></div> <!-- Container for displaying news articles -->
+
+    <script>
+        // Fetch the JSON data from the provided URL
+        fetch('https://raw.githubusercontent.com/joeljohn20001/final-et/main/news1.json')
+            .then(response => response.json()) // Parse the response as JSON
+            .then(data => {
+                // Get the news array from the JSON data
+                let newsArray = data;
+
+                // Select the container where news will be displayed
+                const newsContainer = document.getElementById('news-container');
+
+                // Iterate through the news array and create HTML elements for each news article
+                newsArray.forEach(newsItem => {
+                    const newsCard = document.createElement('div');
+                    newsCard.classList.add('news-card');
+
+                    // Create and append the image element
+                    const img = document.createElement('img');
+                    img.src = newsItem.urlToImage;
+                    img.alt = newsItem.title;
+                    newsCard.appendChild(img);
+
+                    // Create and append the title element
+                    const title = document.createElement('h3');
+                    title.textContent = newsItem.title;
+                    newsCard.appendChild(title);
+
+                    // Create and append the description element
+                    const description = document.createElement('p');
+                    description.textContent = newsItem.description;
+                    newsCard.appendChild(description);
+
+                    // Create and append the read more link
+                    const link = document.createElement('a');
+                    link.href = newsItem.url;
+                    link.textContent = 'Read more';
+                    link.target = '_blank'; // Open the link in a new tab
+                    newsCard.appendChild(link);
+
+                    // Append the news card to the container
+                    newsContainer.appendChild(newsCard);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the news:', error);
+            });
+    </script>
+</body>
+</html>

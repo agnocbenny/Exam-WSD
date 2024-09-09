@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bbc-news",
+    "name": "BBC News",
+    "author": "Jane Smith",
+    "title": "Global Event Updates",
+    "description": "Details on recent global events.",
+    "url": "https://www.bbc.com/news/world/important-event",
+    "urlToImage": "https://cdn.bbc.com/news/images/global-event.jpg",
+    "publishedAt": "2024-09-08T10:20:00Z",
+    "content": "This is the full article content."
+  },
+  {
+    "id": "cnn-news",
+    "name": "CNN News",
+    "author": "John Doe",
+    "title": "Economic Shifts in 2024",
+    "description": "A look into recent economic developments.",
+    "url": "https://www.cnn.com/news/world/economic-shifts",
+    "urlToImage": "https://cdn.cnn.com/news/images/economic-shifts.jpg",
+    "publishedAt": "2024-09-09T11:15:00Z",
+    "content": "Full article content on economic shifts."
+  },
+  {
+    "id": "nyt-news",
+    "name": "NY Times",
+    "author": "Emily White",
+    "title": "Political Climate in 2024",
+    "description": "Changes in political climate across the globe.",
+    "url": "https://www.nytimes.com/news/political-climate",
+    "urlToImage": "https://cdn.nytimes.com/news/images/political-climate.jpg",
+    "publishedAt": "2024-09-07T09:10:00Z",
+    "content": "In-depth look at political climate changes."
+  },
+  {
+    "id": "fox-news",
+    "name": "Fox News",
+    "author": "Robert Brown",
+    "title": "Technology Advances in 2024",
+    "description": "A look into the latest technology innovations.",
+    "url": "https://www.foxnews.com/news/technology-advances",
+    "urlToImage": "https://cdn.foxnews.com/news/images/tech-advances.jpg",
+    "publishedAt": "2024-09-06T08:15:00Z",
+    "content": "Exploring the top technological advancements in 2024."
+  },
+  {
+    "id": "reuters-news",
+    "name": "Reuters",
+    "author": "Amanda Lee",
+    "title": "Climate Change Report 2024",
+    "description": "New findings on climate change impact.",
+    "url": "https://www.reuters.com/news/climate-change-report",
+    "urlToImage": "https://cdn.reuters.com/news/images/climate-report.jpg",
+    "publishedAt": "2024-09-05T12:30:00Z",
+    "content": "A detailed report on the latest climate change data."
+  },
+  {
+    "id": "al-jazeera-news",
+    "name": "Al Jazeera",
+    "author": "Sarah Khan",
+    "title": "Middle East Peace Talks",
+    "description": "Updates on the ongoing peace negotiations.",
+    "url": "https://www.aljazeera.com/news/middle-east-peace-talks",
+    "urlToImage": "https://cdn.aljazeera.com/news/images/peace-talks.jpg",
+    "publishedAt": "2024-09-04T15:45:00Z",
+    "content": "Negotiations between key stakeholders in the Middle East."
+  },
+  {
+    "id": "abc-news",
+    "name": "ABC News",
+    "author": "Michael Turner",
+    "title": "Wildfires in California",
+    "description": "Reports on the devastating wildfires across California.",
+    "url": "https://abcnews.go.com/news/california-wildfires",
+    "urlToImage": "https://cdn.abcnews.com/news/images/wildfires.jpg",
+    "publishedAt": "2024-09-03T07:30:00Z",
+    "content": "Thousands of acres burned in ongoing California wildfires."
+  },
+  {
+    "id": "nbc-news",
+    "name": "NBC News",
+    "author": "Patricia Davis",
+    "title": "COVID-19 Updates",
+    "description": "Latest updates on the global pandemic situation.",
+    "url": "https://www.nbcnews.com/news/covid-updates",
+    "urlToImage": "https://cdn.nbcnews.com/news/images/covid-updates.jpg",
+    "publishedAt": "2024-09-02T10:00:00Z",
+    "content": "Updates on COVID-19 cases and vaccine rollouts."
+  },
+  {
+    "id": "guardian-news",
+    "name": "The Guardian",
+    "author": "Chris Martin",
+    "title": "Global Protests 2024",
+    "description": "Protests erupt around the world over various issues.",
+    "url": "https://www.theguardian.com/news/global-protests-2024",
+    "urlToImage": "https://cdn.theguardian.com/news/images/global-protests.jpg",
+    "publishedAt": "2024-09-01T14:00:00Z",
+    "content": "Mass protests in various countries addressing socio-political issues."
+  },
+  {
+    "id": "sky-news",
+    "name": "Sky News",
+    "author": "Emma Watson",
+    "title": "Space Exploration Milestone",
+    "description": "Historic achievement in space exploration.",
+    "url": "https://www.skynews.com/news/space-exploration-milestone",
+    "urlToImage": "https://cdn.skynews.com/news/images/space-exploration.jpg",
+    "publishedAt": "2024-08-31T09:50:00Z",
+    "content": "A breakthrough in human space exploration."
+  }
+]

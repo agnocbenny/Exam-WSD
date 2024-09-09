@@ -1,0 +1,68 @@
+[
+    {
+        "id": "bbc-news",
+        "name": "BBC News",
+        "author": "Rajendran Ravi",
+        "title": "Wayanadu Flood",
+        "description": "Details about another disaster happening  in Kerala.",
+        "url": "https://www.bbc.com/news/world/2024/important-event",
+        "urlToImage": "https://cdn.bbc.com/news/images/important-event.jpg",
+        "publishedAt": "2024-09-08T10:20:00Z",
+        "content": "This is the disaster happened in kerala last week."
+    },
+    {
+        "id": "cnn-news",
+        "name": "CNN News",
+        "author": " Ganesh Gupta",
+        "title": "Global Market Crash",
+        "description": "Markets across the globe plummet as financial turmoil spreads.",
+        "url": "https://www.cnn.com/news/world/2024/market-crash",
+        "urlToImage": "https://cdn.cnn.com/news/images/market-crash.jpg",
+        "publishedAt": "2024-09-07T11:25:00Z",
+        "content": "Global financial markets have suffered significant losses..."
+    },
+    {
+        "id": "The Hindu-news",
+        "name": "English news",
+        "author": "M Swaminadhan",
+        "title": "New Space Discovery",
+        "description": "NASA discovers a new planet in the solar system.",
+        "url": "https://www.reuters.com/news/space-discovery",
+        "urlToImage": "https://cdn.reuters.com/news/images/space-discovery.jpg",
+        "publishedAt": "2024-09-06T14:30:00Z",
+        "content": "Scientists at NASA have uncovered a new planet in our solar system..."
+    },
+    {
+        "id": "fox-news",
+        "name": "Fox News",
+        "author": " Cooper",
+        "title": "Political Scandal",
+        "description": "A new political scandal shakes the government.",
+        "url": "https://www.foxnews.com/news/political-scandal",
+        "urlToImage": "https://cdn.foxnews.com/news/images/political-scandal.jpg",
+        "publishedAt": "2024-09-05T09:50:00Z",
+        "content": "The latest political scandal has caused an uproar in the government..."
+    },
+    {
+        "id": "nbc-news",
+        "name": "NBC News",
+        "author": " Clark",
+        "title": "Tech Industry Boom",
+        "description": "Tech companies are seeing unprecedented growth this year.",
+        "url": "https://www.nbcnews.com/news/tech-industry-boom",
+        "urlToImage": "https://cdn.nbcnews.com/news/images/tech-boom.jpg",
+        "publishedAt": "2024-09-04T15:10:00Z",
+        "content": "Tech giants have reported record profits, and stocks are on the rise..."
+    },
+    {
+        "id": "abc-news",
+        "name": "ABC News",
+        "author": "Michael Jordan",
+        "title": "Sports Update: Championship Finals",
+        "description": "The championship finals are set to be held next week.",
+        "url": "https://www.abcnews.com/news/sports-finals",
+        "urlToImage": "https://cdn.abcnews.com/news/images/sports-finals.jpg",
+        "publishedAt": "2024-09-03T08:45:00Z",
+        "content": "The much-anticipated championship finals are scheduled to take place next week..."
+    }
+]

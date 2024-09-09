@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* Global styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_640.jpg");
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Styling for the form container */
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Styling for the header */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for all input elements */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Styles for submit and reset buttons */
+        /* Styles for submit button */
+input[type="submit"] {
+    background-color: hsl(119, 100%, 50%);
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 49%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Styles for reset button */
+input[type="reset"] {
+    background-color: #ff4d4d; /* Red color for reset button */
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 49%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #30b300;
+}
+
+/* Hover effect for reset button */
+input[type="reset"]:hover {
+    background-color: #cc0000; /* Darker red on hover for reset button */
+}
+
+
+        /* Hover effect for buttons */
+        /*input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #18b300;
+        }
+
+        /* Styling for labels */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Styling for validation feedback */
+        .valid-feedback {
+            color: green;
+            display: none;
+        }
+
+        .invalid-feedback {
+            color: red;
+            display: none;
+        }
+
+        .invalid input {
+            border-color: red;
+        }
+
+        .valid input {
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign-Up </h1>
+        <form id="registrationForm">
+            <!-- Full Name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <span class="valid-feedback" id="nameValid">✔️ Valid</span>
+            <span class="invalid-feedback" id="nameInvalid">❌ Name must be at least 3 characters long and contain only letters and spaces.</span>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <span class="valid-feedback" id="emailValid">✔️ Valid</span>
+            <span class="invalid-feedback" id="emailInvalid">❌ Please enter a valid email address.</span>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span class="valid-feedback" id="passwordValid">✔️ Valid</span>
+            <span class="invalid-feedback" id="passwordInvalid">❌ Password must be at least 8 characters long and contain both letters and numbers.</span>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            <span class="valid-feedback" id="confirmPasswordValid">✔️ Passwords match</span>
+            <span class="invalid-feedback" id="confirmPasswordInvalid">❌ Passwords do not match.</span>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span class="valid-feedback" id="dobValid">✔️ Age verified</span>
+            <span class="invalid-feedback" id="dobInvalid">❌ You must be at least 18 years old.</span>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <script src="valid.js"></script>
+</body>
+</html>
